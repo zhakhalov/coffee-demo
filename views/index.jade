@@ -1,0 +1,8 @@
+extends ./layout.jade 
+
+block scripts
+	script(type="text/javascript", src="/dist/js/app.js")
+	
+block content
+	.container(ng-controller="AppCtrl")
+		button.btn.btn-default(ng-click="click()") Click Me
